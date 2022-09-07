@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    tools:context=".ui.LoginActivity">
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome"
+                android:textStyle="bold"
+                android:textSize="35sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/purple_500"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/txtSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:padding="2dp"
+                android:text="@string/enter_login_details"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutEmail"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                app:boxStrokeColor="@color/bgcolor"
+                app:hintTextColor="@color/black"
+                app:startIconDrawable="@drawable/ic_baseline_email_24"
+                app:startIconTint="@color/bgcolor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_email"
+                    android:textColor="@color/black"
+                    android:inputType="textEmailAddress"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutPass"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                app:boxStrokeColor="@color/bgcolor"
+                app:hintTextColor="@color/black"
+                app:passwordToggleEnabled="true"
+                app:startIconDrawable="@drawable/ic_baseline_lock_24"
+                app:startIconTint="@color/bgcolor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_password"
+                    android:textColor="@color/black"
+                    android:inputType="textPassword"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/purple_500"
+                android:text="@string/login"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+        </LinearLayout>

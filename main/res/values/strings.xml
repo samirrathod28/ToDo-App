@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ToDo App</string>
+    <string name="welcome">Welcome</string>
+    <string name="enter_login_details">Enter Login Details</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="login">Login</string>
+    <string name="button">Button</string>
+    <string name="enter_description">Start Writing...</string>
+    <string name="enter_title">Title</string>
+    <string name="daily">Daily</string>
+    <string name="weekly">Weekly</string>
+    <string name="monthly">Monthly</string>
+    <string name="dateandtimeformat">dd MMM, yyyy-HH:mm</string>
+    <string name="to_do_title">To Do Title</string>
+    <string name="date_and_time">Date and Time</string>
+</resources>
